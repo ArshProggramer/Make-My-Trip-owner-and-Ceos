@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <title>Make My Trip</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <ul></ul>
+            </ul>
+        </header>
+        <section class="banner">
+            <div class="imgBx">
+                <img src="84ae36dd3b64c21ab0803c2448b6bd83517e62eb9b87e9473205069c77350851.jpg" class="active">
+                <img src="1554210290.jpg">
+                <img id="Sanjaysir" src="Sanjay sir.jpeg">
+                <img src="Make my trip lite app.png">
+                <img src="redbus-statistics-user-count-facts.png">
+                <img src="goibibo-logo_2.png.png">
+            </div>
+    
+            <div class="contentBx">
+                <div class="active">
+                    <h2 >Deep kalra Sir</h2>
+                    <p>Deep Kalra sir is founder of Make My Trip and he is owner of Make My Trip.He is very ambitious and talented Man. he life is all about determination and hard work which can be motivation for many.And he is very very good man.
+                     </p>
+                      <a href="#">Details</a>
+                    </div>
+                    <div>
+                        <h2>Rajesh Magow sir</h2>
+                        <p>Mr.Rajesh Magow sir he is Co-Founder of make My trip & Group Chie And he is very good personal.thankyou sir for helping. 
+                        </p>
+                        <a href="#">Details</a>
+                    </div>    
+                    <div>
+                        <h2>Sanjay Arya</h2>
+                        <p>Sanjay Arya Sir is Executive Assistant for CEO and Seeing all Deep sir Work.Thank you sir for helping.
+                        </p>
+                        <a href="#">Details</a>
+                    </div>           
+                    <div>
+                    <h2>Make My Trip</h2>
+                    <p>2000: MakeMyTrip was founded by Deep Kalra, an alumnus of IIM-Ahmedabad. It was launched in US market in the year 2000 to cater to the overseas Indian community for their US to India travel needs.
+                        2005 - September: MakeMyTrip started Indian operations in September 2005, offering online flight tickets to Indian travellers. The company also started to focus on non-air businesses like holiday packages and hotel bookings.
+                        2010 - September 17: On 17 August 2010, MakeMyTrip Limited was listed on the NASDAQ after its initial public offering.
+                        2011: In 2011, the company created several travel related apps for mobile devices. MakeMyTrip also made three acquisitions—Luxury Tours and Travel Private Limited (Singapore), ITC Group Hotel Travel Group, and ETB Group—to enter new markets in Southeast Asia and Europe. In September 2014, MakeMyTrip instituted a $15 million innovation fund to support travel start-ups.
+                        2016 - January: In January 2016, the Chinese travel booking company Ctrip agreed to invest $180 million to MakeMyTrip.
+                     </p>
+                      <a href="#">Details</a>
+                </div>
+                <div>
+                    <h2>Red Bus</h2>
+                    <p>RedBus is an Indian online bus ticketing platform, providing ticket booking facility through its website, iOS and Android mobile apps. Headquartered in Bangalore, it connects bus travellers with a network of over 2500 bus operators,across India, Malaysia, Indonesia, Singapore, Peru and Colombia. It claims to have registered over 180 million trips,[3] with a customer base of over 20 million. In 2018, the company achieved a GMV of ₹50 billion (equivalent to ₹57 billion or US$750 million in 2020), with a 70% share in the Indian online bus ticketing segment.
+                     </p>
+                      <a href="#">Details</a>
+                </div>
+                <div>
+                    <h2>Go Ibibo</h2>
+                    <p>Goibibo founder he Ashish Kashyap and Goibibo Was partnership with Make my trip.
+                     </p>
+                      <a href="#">Details</a>
+                </div>
+            </div>
+    
+            <ul class="controls">
+                <li onclick="PrevSlide();PrevSlideText();"></li>
+                <li onclick="nextSlide();nextSlideText();"></li>
+            </ul>  
+        </section>
+    
+        <script type="text/javascript">
+            const imgBx = document.querySelector('.imgBx');
+            const slides = imgBx.getElementsByTagName('img');
+            var i = 0;
+    
+            function nextSlide(){
+                slides[i].classList.remove('active');
+                i=(i + 1) % slides.length;
+                slides[i].classList.add('active');
+            }
+    
+            function PrevSlide(){
+                slides[i].classList.remove('active');
+                i=(i - 1 + slides.length) % slides.length;
+                slides[i].classList.add('active');
+            }
+    
+            const contentBx = document.querySelector('.contentBx');
+            const slidesText = contentBx.getElementsByTagName('div');
+            var j = 0;
+    
+            function nextSlideText(){
+                slidesText[j].classList.remove('active');
+                j=(j + 1) % slidesText.length;
+                slidesText[j].classList.add('active');
+            }
+    
+            function PrevSlideText(){
+                slidesText[j].classList.remove('active');
+                j=(j - 1 + slidesText.length) % slidesText.length;
+                slidesText[j].classList.add('active');
+            }
+        </script>
+    </body>
+    </html>
+    </body>
+</html>
